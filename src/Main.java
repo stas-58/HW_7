@@ -21,15 +21,15 @@ public class Main {
 
         System.out.println("Задача 2");
         int i = 0;
-        int n = 11;
         while (i < 10) {
             i = i + 1;
             System.out.print(i + " ");
         }
         System.out.println(" ");
-        while (n > 1) {
-            n = n - 1;
-            System.out.print(n + " ");
+        {
+            for (int n = 10; n > 0; n--) {
+                System.out.print(n + " ");
+            }
         }
         System.out.println(" ");
         System.out.println("____");
@@ -89,16 +89,16 @@ public class Main {
         System.out.println("Задача 6");
         int depositTerm = 9;
         float monthlyLevy = 15000F;
-        float amountByMonth = 0F;
-        float halfYearSum;
+        float amountbyMonth = 0F;
+        float halfyearSum;
         int j = 0;
         int halfYear = depositTerm * 2;
         DecimalFormat dS = new DecimalFormat("###,###,###.00");
         while (j < halfYear) {
             j = j + 1;
-            amountByMonth = (float) (amountByMonth + monthlyLevy + monthlyLevy * 0.07);
-            halfYearSum = amountByMonth * 6;
-            System.out.println("Сумма накоплений в " + j + "-ое полугодие равна " + dS.format(halfYearSum));
+            amountbyMonth = (float) (amountbyMonth + monthlyLevy + monthlyLevy * 0.07);
+            halfyearSum = amountbyMonth * 6;
+            System.out.println("Сумма накоплений в " + j + "-ое полугодие равна " + dS.format(halfyearSum));
 
         }
         System.out.println(" ");
